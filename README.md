@@ -8,6 +8,28 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 * Create Expo account https://expo.dev/
 * Create Expo project `react-native-demo-app`
 * Link with expo `eas init --id d13da8d8-d443-45cc-b5d3-bc0a0c467601`
+* Follow steps here: https://docs.expo.dev/get-started/set-up-your-environment/
+  * `eas build:configure` -> All
+  * This creates a `eas.json` file
+* Build locally `eas build --local`
+  * Fastlane is not available, make sure it's installed and in your PATH
+    * `brew install fastlane`
+  * Cocoapods is not available, make sure it's installed and in your PATH
+    * `brew install ruby`
+    * `brew install cocoapods`
+* Build for iOS device
+  * `eas build --platform ios --profile development`
+  * ensure `build.development.ios.simulator` = `false`
+  * Go to Expo > Project > Builds > iOS Build > Install > Scan QR code with iOS Device
+* Build for Android
+  * `eas build --platform android --profile development`
+  * Go to Expo > Project > Builds > Android Build > Install > Scan QR code with Android Device
+* Build and run on all
+  * `npx expo start`
+  * scan QR code in console with iOS device -> loads app on iOS device
+  * scan QR code in console with Android device -> loads app on Android device
+  * press `i` -> loads app on XCode iOS emulator
+  * press `a` -> loads app on Android studio emulator
 
 ## Get started
 
@@ -22,6 +44,8 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    ```bash
     npx expo start
    ```
+
+3. If you are looking to create a development build locally, rather than remotely on EAS, you can create local builds with `npx expo run:[android|ios]` or with `eas build --local`.
 
 In the output, you'll find options to open the app in a
 
