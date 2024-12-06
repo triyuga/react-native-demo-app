@@ -2,6 +2,13 @@
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
+## Steps to generate this app
+
+* `npx create-expo-app react-native-demo-app`
+* Create Expo account https://expo.dev/
+* Create Expo project `react-native-demo-app`
+* Link with expo `eas init --id d13da8d8-d443-45cc-b5d3-bc0a0c467601`
+
 ## Get started
 
 1. Install dependencies
