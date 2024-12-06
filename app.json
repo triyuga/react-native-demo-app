@@ -36,6 +36,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "d86bc0d5-ef93-4891-8a4f-751718a67ed0"
+      }
+    },
+    "owner": "tim.marwick"
   }
 }
