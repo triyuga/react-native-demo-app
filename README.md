@@ -31,6 +31,22 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
   * press `i` -> loads app on XCode iOS emulator
   * press `a` -> loads app on Android studio emulator
 
+## Adding a new native package dependency
+
+Some react-native npm packages are [linked](https://reactnative.dev/docs/linking-libraries-ios) to native dependencies.
+In such cases you'll need to uninstall, rebuild, and reinstall the app on you native devices and emulators.
+
+After installing the package, you need to link the native dependencies. For Expo managed workflow, you can use:
+
+For bare React Native projects, you might need to run:
+
+Make sure to rebuild your project after installing new native dependencies.
+
+```bash
+npm install @react-native-async-storage/async-storage
+
+```
+
 ## Get started
 
 1. Install dependencies
